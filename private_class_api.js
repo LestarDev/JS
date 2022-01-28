@@ -11,7 +11,7 @@ class Lestar{
         console.log(this);
     }
 
-    add(name,value){
+    add(name,value=null){
         this.#privateArray[name]=value;
     }
 
@@ -21,6 +21,10 @@ class Lestar{
 
     get(name){
         return this.#privateArray[name];
+    }
+    
+    getName(){
+        return this.#name;
     }
 
     createName(name){
